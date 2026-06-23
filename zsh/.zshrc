@@ -17,6 +17,19 @@ unset __conda_setup
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/Users/ayime/Code/develop/flutter/bin"
 
+alias vi='nvim'
+EDITOR='nvim'
+
+# fzf
+source <(fzf --zsh)
+alias inv='nvim $(fzf -m --preview "bat --color=always {}")'
+
+show_file_or_dir_preview="if [ -d {} ]; then tree -C {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+
+bindkey '^[f' fzf-file-widget
+bindkey '^[r' fzf-history-widget
+
 # opencode
 export PATH=/Users/ayime/.opencode/bin:$PATH
 export PATH="$PATH:$HOME/.pub-cache/bin"
@@ -28,21 +41,21 @@ alias ta='tmux attach-session'
 alias tx='tmux kill-session'
 
 # git
-alias gd= "git diff"
+alias gd="git diff"
 
-alias ga= "git add"
-alias gap= "git add --patch"
+alias ga="git add"
+alias gap="git add --patch"
 
-alias gc= "git commit"
+alias gc="git commit"
 
-alias gp= "git push"
-alias gu= "git pull"
+alias gp="git push"
+alias gu="git pull"
 
-alias gl= "git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
-alias gb= "git branch"
+alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
+alias gb="git branch"
 
-alias gi= "git init"
-alias gcl= "git clone"
+alias gi="git init"
+alias gcl="git clone"
 
 # matrix rain
 alias matrix="zsh ~/.matrix_jp.sh"
