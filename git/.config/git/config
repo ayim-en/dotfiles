@@ -1,0 +1,84 @@
+[user]
+		name = ayim.en
+		email = ayimen.dev@gmail.com
+
+[core]
+		compression = 9
+		whitespace = error
+		preloadindex = true
+
+[advice]
+		addEmptyPathspec = false
+		pushNonFastForward = false
+		statusHints = false
+
+[status]
+		branch = true
+		showStash = true
+		showUntrackedFiles = all
+
+[push]
+		autoSetupRemote = true
+		default = current
+		followTags = true
+
+[pull]
+		default = current
+		rebase = true
+
+[rebase]
+		autoStash = true
+		missingCommitCheck = warn
+
+[log]
+		abbrevCommit = true
+		graphColors = blue,yellow,cyan,magenta,green,red
+
+[diff]
+		context = 3
+		renames = copies
+		interHunkContext = 10
+
+[color "diff"]
+		meta = black bold
+		frag = magenta
+		context = white
+		whitespace = yellow reverse
+		old = red
+
+[color "decorate"]
+		HEAD = red
+		branch = blue
+		tag = yellow
+		remoteBranch = magenta
+
+[color "branch"]
+		current = magenta
+		local = default
+		remote = yellow
+		upstream = green
+		plain = blue
+
+[pager]
+		diff = diff-so-fancy | $PAGER
+
+[diff-so-fancy]
+		markEmptyLines = false
+
+[interactive]
+		diffFilter = diff-so-fancy --patch
+		singlekey = true
+
+[branch]
+		sort = -commiterdate
+
+[tag]
+		sort = -taggerdate
+
+[url "git@github.com:ayim-en/"]
+		insteadOf = "ah:"
+
+[url "git@github.com:"]
+		insteadOf = "gh:"
+
+
