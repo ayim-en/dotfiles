@@ -43,5 +43,3 @@ alias gb= "git branch"
 
 alias gi= "git init"
 alias gcl= "git clone"
-
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
