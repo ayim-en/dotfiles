@@ -43,3 +43,8 @@ alias gb= "git branch"
 
 alias gi= "git init"
 alias gcl= "git clone"
+
+# matrix rain
+alias matrix="zsh ~/.matrix_jp.sh"
+
+alias matrix="zsh ~/.matrix_jp.sh"
