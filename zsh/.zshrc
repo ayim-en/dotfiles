@@ -39,6 +39,7 @@ alias tn='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias ta='tmux attach-session'
 alias tx='tmux kill-session'
+alias trn='tmux rename-session'
 
 # git
 alias gd="git diff"
@@ -59,5 +60,4 @@ alias gcl="git clone"
 
 # matrix rain
 alias matrix="zsh ~/.matrix_jp.sh"
-
 alias matrix="zsh ~/.matrix_jp.sh"
